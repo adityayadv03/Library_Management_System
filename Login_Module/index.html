@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <div id="division">
+        <form ng-app="myApp" ng-init="nam=''" ng-controller="myCtrl">
+            <div class="box">
+                <p>Weclome Back <span id="headuser" ng-style="myObj">{{nam}}</span></p>
+            </div>
+            <div class="box">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter Username/Email" ng-model="nam">
+            </div>
+            <div class="box">
+                <label for="pass">Password</label>
+                <input type="password" id="pass" placeholder="Password">
+            </div>
+            <div>
+                <p id="mess"></p>
+            </div>
+            <div class="box">
+                <button id="login">Sign In</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        const app=angular.module("myApp",[]);
+        app.controller("myCtrl",function($scope){
+            $scope.myObj={
+                "color":"lightcoral",
+            }
+        });
+    </script>
+</body>
+</html>
