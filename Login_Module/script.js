@@ -3,36 +3,35 @@ const passEL=document.getElementById("pass");
 const loginEl=document.getElementById("login");
 const messEL=document.getElementById("mess");
 
-loginEl.addEventListener('click',()=>{
+console.log("Check");
+loginEl.addEventListener('click',(event)=>{
     let user=userEL.value;
     let pas=passEL.value;
     let space=/[ ]/;
     if(user==="" || pas===""){
-        setTimeout(()=>{
-            messEL.textContent="Fill the fields First";
-        },500);
+        event.preventDefault();
+        messEL.textContent="Fill the fields First";
         setTimeout(()=>{
             window.location.reload();
         },3000);
     }
     else if(space.test(user)===true){
-        setTimeout(()=>{
-            messEL.textContent="Spaces are Not Allowed";
-        },500);
+        event.preventDefault();
+        messEL.textContent="Spaces are Not Allowed";
         setTimeout(()=>{
             window.location.reload();
         },3000);
     }
     else if(user!=="adityayadv01" || pas!=="passcode21"){
-        setTimeout(()=>{
-            messEL.textContent="Wrong username or Password";
-        },500);
+        event.preventDefault();
+        messEL.textContent="Wrong username or Password";
         setTimeout(()=>{
             userEL.value="";
             passEL.value="";
         },3000);
     }
     else if(user==="adityayadv01" && pas==="passcode21"){
-        window.location.assign('../index.html');
+        event.preventDefault();
+        window.location.replace("../index.html");
     }
 });
