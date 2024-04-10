@@ -6,35 +6,33 @@ const signEL=document.querySelector("#signup");
 const messEL=document.querySelector("#mess");
 const logEL=document.querySelector("#login");
 
-signEL.addEventListener('click',()=>{
+signEL.addEventListener('click',(event)=>{
     let name=nameEL.value;
     let user=userEL.value;
     let mail=mailEL.value;
     let pass=passEL.value;
     if(name==="" || user==="" || mail==="" || pass===""){
+        event.preventDefault();
         messEL.textContent="First fill the Fields.";
-        signEL.disabled=true;
     }else if(isValidfield(user)!==true || isValidfield(mail)!==true){
-        signEL.disabled=true;
+        event.preventDefault();
     }else if(isPassValid(pass)!==true){
-        signEL.disabled=true;
+        event.preventDefault();
     }else{
         messEL.classList.remove("wrong");
         messEL.classList.add("right");
         messEL.textContent="SignUp Completed! You can now Login";
-        signEL.disabled=true;
         logEL.style.display='block';
     }
     setTimeout(()=>{
         messEL.textContent="";
-        signEL.disabled=false;
         messEL.classList.remove("right");
         messEL.classList.add("wrong");
     },3000);
 });
 
-logEL.addEventListener("click",()=>{
-    logEL.disabled=true;
+logEL.addEventListener("click",(event)=>{
+    event.preventDefault();
     window.location.href="../Login_Module/index.html";
 });
 
