@@ -19,6 +19,8 @@ signEL.addEventListener('click',(event)=>{
     }else if(isPassValid(pass)!==true){
         event.preventDefault();
     }else{
+        event.preventDefault();
+        store(user,mail,pass);
         messEL.classList.remove("wrong");
         messEL.classList.add("right");
         messEL.textContent="SignUp Completed! You can now Login";
@@ -56,4 +58,14 @@ function isPassValid(ch){
     }else{
         return true;
     }
+}
+
+function store(username,usermail,password){
+    let obj={
+        user:username,
+        mail:usermail,
+        pass:password
+    };
+    localStorage.setItem('user',JSON.stringify(obj));
+    alert("Job Done");
 }

@@ -21,8 +21,19 @@ loginEl.addEventListener('click',(event)=>{
         setTimeout(()=>{
             window.location.reload();
         },3000);
-    }
-    else if(user!=="adityayadv01" || pas!=="passcode21"){
+    }else if(localStorage.getItem('user')){
+        event.preventDefault();
+        let ob=JSON.parse(localStorage.getItem('user'));
+        if((user===ob.user || user===ob.mail) && pas===ob.pass){
+            window.location.replace("../index.html");
+        }else{
+            messEL.textContent="Wrong username or Password";
+            setTimeout(()=>{
+                userEL.value="";
+                passEL.value="";
+            },3000);
+        }
+    }else if(user!=="adityayadv01" || pas!=="passcode21"){
         event.preventDefault();
         messEL.textContent="Wrong username or Password";
         setTimeout(()=>{
