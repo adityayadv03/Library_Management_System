@@ -67,5 +67,5 @@ function store(username,usermail,password){
         pass:password
     };
     localStorage.setItem('user',JSON.stringify(obj));
-    alert("Job Done");
+    alert("Account Created");
 }
