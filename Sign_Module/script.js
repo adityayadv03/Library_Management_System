@@ -4,7 +4,6 @@ const mailEL=document.querySelector("#mail");
 const passEL=document.querySelector("#pass");
 const signEL=document.querySelector("#signup");
 const messEL=document.querySelector("#mess");
-const logEL=document.querySelector("#login");
 
 signEL.addEventListener('click',(event)=>{
     let name=nameEL.value;
@@ -23,19 +22,14 @@ signEL.addEventListener('click',(event)=>{
         store(user,mail,pass);
         messEL.classList.remove("wrong");
         messEL.classList.add("right");
-        messEL.textContent="SignUp Completed! You can now Login";
-        logEL.style.display='block';
+        messEL.textContent="SignUp Completed! You can now SignIn";
+        window.location.href="../Login_Module/index.html";
     }
     setTimeout(()=>{
         messEL.textContent="";
         messEL.classList.remove("right");
         messEL.classList.add("wrong");
     },3000);
-});
-
-logEL.addEventListener("click",(event)=>{
-    event.preventDefault();
-    window.location.href="../Login_Module/index.html";
 });
 
 function isValidfield(ch){

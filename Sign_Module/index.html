@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../Login_Module/style.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,30 +29,35 @@
     <main>
         <div id="log_section">
             <div id="section_image">
-                <img src="../images/login.jpg">
+                <img src="../images/signup.jpg">
             </div> 
             <div id="section_form">
-                <h2>Sign In</h2>
-                <form id="form">
+                <h2>Sign Up</h2>
+                <form>
                     <div class="box">
-                        <label for="email">Email</label>
-                        <input type="text" placeholder="Email" id="email">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Name" id="name">
+                    </div>
+                    <div class="box">
+                        <label for="username">Username</label>
+                        <input type="text" placeholder="Username" id="username">
+                    </div>
+                    <div class="box">
+                        <label for="mail">Email</label>
+                        <input type="text" placeholder="Email" id="mail">
                     </div>
                     <div class="box">
                         <label for="pass">Password</label>
                         <input type="password" placeholder="Password" id="pass">
                     </div>
                     <div class="box">
-                        <p>Not remember your password! <a href="#">Forget Password</a></p>
-                    </div>
-                    <div class="box">
-                        <p>Don't have a Account? <a href="../Sign_Module/index.html">SignUp</a></p>
+                        <p>Already have a Account? <a href="../Login_Module/index.html">SignIn</a></p>
                     </div>
                     <div class="box">
                         <p id="mess" class="wrong"></p>
                     </div>
                     <div class="box">
-                        <button id="login">Login</button>
+                        <button id="signup">Sign Up</button>
                     </div>
                 </form>
             </div>

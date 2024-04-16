@@ -3,72 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library Management System</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="main">Library Management System</div>
     <nav>
-        <div id="head">.Library</div>
-        <div id="links">
-            <div id="find">
-                <img src="./Images/searchicon.png" height="12px">
-                <input type="text" id="search" placeholder="Search Here :- ">
-                <button id="searchbtn">Search</button>
+        <div id="nav_div_1">
+            <h4>Learner</h4>
+        </div>
+        <div id="nav_div_2">
+            <a href="#" class="nav_hover">Home</a>
+            <a href="#" class="nav_hover">About</a>
+            <a href="#foot-main" class="nav_hover">Contact Us</a>
+            <a href="./Login_Module/index.html" class="nav_hover">Login</a>
+            <div id="search_bar">
+                <input type="text" placeholder="Search">
+                <img src="./images/searchicon.png" height="20px" id="search">
             </div>
-            <a href="#">Home</a>
-            <a href="./Login_Module/index.html">LogIn</a>
-            <a href="./SignUp_Module/index.html">SignUp</a>
-            <a href="#foot">Contact</a>
         </div>
     </nav>
-    <div class="section first">
-        <h2>Welcome to E-Library</h2>
-        <h3>A Place to Explore yourself with books</h3>
-        <div id="main-button">
-            <button id="get">Get Started</button>
-            <a id="log" href="./Login_Module/index.html">LogIn</a>
+    <main>
+        <div id="section_1">
+            <div id="heading_section">
+                <h2>Best Seller</h2>
+            </div>
+            <div id="inner_section">
+                <div class="template">
+                    <div><img src="./images/Section_Books/Book_1.jpg"></div>
+                    <p class="author">Sadhguru</p>
+                </div>
+                <div class="template">
+                    <div><img src="./images/Section_Books/Book_2.jpg"></div>
+                    <p class="author">Ashneer Grover</p>
+                </div>
+                <div class="template">
+                    <div><img src="./images/Section_Books/Book_3.jpg"></div>
+                    <p class="author">Colleen Hoover</p>
+                </div>
+                <div class="template">
+                    <div><img src="./images/Section_Books/Book_4.jpg"></div>
+                    <p class="author"></p>
+                </div>
+                <div class="template">
+                    <div><img src=""></div>
+                    <p class="author"></p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="section second">
-        <h2>Top Novels of the Weeks</h2>
-    </div>
-    <div class="section third">
-        <h2>Previous Year Paper</h2>
-    </div>
-    <footer id="foot">
-        <p id="footh">Contact Us</p>
-        <div>
-            <div class="center">
-                <div class="frame">
-                    <h3>About Us</h3>
-                    <div class="min-foot">
-                        <img src="./Images/phoneicon.png" height="15px">
-                        <a href="">Phone Number :- +91 123456789</a>
-                    </div>
-                    <div class="min-foot">
-                        <img src="./Images/mailicon.jpg" height="15px">
-                        <a href="mailto:officialuser.aditya2022@gmail.com">Email :- officialuser.aditya2022@gmail.com</a>
-                    </div>
+        <div id="section_join">
+            <div id="join1">
+                <img src="./images/join.jpg" width="400px">
+            </div>
+            <div id="join2">
+                <div class="field">
+                    <h2>Join Our Community</h2>
                 </div>
-                <div class="frame">
-                    <h3>Socials</h3>
-                    <div class="min-foot">
-                        <img src="./Images/githubicon.jpg" height="15px">
-                        <a href="https://github.com/adityayadv03">Github :- @adityayadv03</a>
-                    </div>
-                    <div class="min-foot">
-                        <img src="./Images/igicon.jpg" height="15px">
-                        <a href="https://www.instagram.com/adityayadv01/">Instagram :- @adityayadv01</a>
-                    </div>
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Name" id="name" required>
+                </div>
+                <div class="field">
+                    <label for="mail">Email</label>
+                    <input type="mail" placeholder="Email" id="mail" required>
+                </div>
+                <div class="field">
+                    <button>Join</button>
                 </div>
             </div>
-            <div id="copyright">
-                <p>&#169; 2024 adityayadv01 All Rights Reserved</p>
+        </div>
+    </main>
+    <footer>
+        <div id="foot-main">
+            <div id="foot_div_1">
+                <h3>Learner</h3>
             </div>
+            <div id="foot_div_2">
+                <div class="foot_sec">
+                    <p>Explore</p>
+                    <a>Reading Lists</a>
+                    <a>About Us</a>
+                    <a>Contact Us</a>
+                </div>
+                <div class="foot_sec">
+                    <p>Follow</p>
+                    <a href="https://github.com/adityayadv03">GitHub</a>
+                    <a href="https://www.instagram.com/adityayadv01/">Instagram</a>
+                    <a>Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div id="foot-second">
+            <p>&#169; All Rights Reserved 2022-26 <a href="https://github.com/adityayadv03">@adityayadv03</a></p>
         </div>
     </footer>
     <script src="script.js"></script>
