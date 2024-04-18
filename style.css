@@ -41,6 +41,7 @@ nav{
 }
 footer{
     background-color: black;
+    width: auto;
 }
 #foot-main{
     color: white;
@@ -171,7 +172,7 @@ footer{
 #section_1{
     height: auto;
     display: flex;
-    background-color: #929aab;
+    background-color: white;
     justify-content: start;
     flex-direction: column;
     padding: 25px;
@@ -185,11 +186,10 @@ footer{
     width: 95vw;
     height: auto;
     display: flex;
-    /* justify-content: space-between; */
     row-gap: 10px;
     gap: 10px;
-    flex-wrap: wrap;
     padding: 10px;
+    border-radius: 5px;
 }
 .template{
     height: 250px;
@@ -224,4 +224,74 @@ footer{
 .issue:hover{
     background-color: rgb(34, 31, 31);
     color: rgb(104, 199, 104);
+}
+#section_2{
+    height: auto;
+    display: flex;
+    background-color: rgb(180, 171, 171);
+    justify-content: start;
+    flex-direction: column;
+    padding: 25px;
+    width: 100vw;
+}
+#heading_section_1 h2{
+    font-size: 30px;
+    text-align: end;
+    position: relative;
+    right: 20px;
+    color: white;
+}
+.section{
+    color: white;
+    height: 300px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-image: url("./images/section_1_bg.jpg");
+    background-size: cover;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    height: 570px;
+}
+.first h2{
+    font-size: 65px;
+}
+.first h3{
+    font-size: 33px;
+}
+#main-button{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+#get{
+    padding: 8px 22px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    background-color: #3c74cf;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+}
+#log{
+    color: wheat;
+    text-decoration: none;
+    font-weight: 450;
+    transition: 0.15s;
+}
+#get:hover{
+    color: rgb(253, 249, 249);
+    background-color: #6b92cf;
+    cursor: pointer;
+}
+#log:hover{
+    color: white;
+    font-weight: 550;
 }

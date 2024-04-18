@@ -1,8 +1,9 @@
-#nav_div_2{
+/* #nav_div_2{
     width: 45%;
-}
+} */
 #log_section{
     padding: 20px;
+    width: auto;
     height: auto;
     display: flex;
     justify-content: space-evenly;
@@ -70,4 +71,66 @@
 }
 .wrong{
     color: red;
+}
+#section_form h3{
+    font-size: 25px;
+    align-self: flex-start;
+    padding: 5px 12px;
+}
+@media screen and (max-width:1300px){
+    .box{
+        width: auto;
+    }
+    #section_image{
+        width: auto;
+    }
+    #main_image{
+        width: 500px;
+    }
+}
+@media screen and (max-width:950px){
+    #section_form{
+        width: 50%;
+    }
+    #log_section{
+        justify-content: center;
+    }
+    #section_form{
+        width: 335px;
+    }
+    .box{
+        width: 316px;
+    }
+}
+@media screen and (max-width:850px){
+    #main_image{
+        width: 400px;
+    }
+    #section_form{
+        width: 320px;
+    }
+    .box{
+        width: 300px;
+    }
+}
+@media screen and (max-width:600px){
+    #main_image{
+        width: 300px;
+    }
+    #section_form{
+        width: 300px;
+    }
+    .box{
+        width: 270px;
+    }
+}
+@media screen and (max-width:550px){
+    #log_section{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:420px){
+    #nav_div_2{
+        width: 80%;
+    }
 }

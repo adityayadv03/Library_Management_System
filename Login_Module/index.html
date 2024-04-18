@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
 <body>
     <nav>
@@ -26,16 +27,17 @@
         </div>
     </nav>
     <main>
-        <div id="log_section">
+        <div id="log_section" ng-app="myApp" ng-controller="myCtrl">
             <div id="section_image">
-                <img src="../images/login.jpg">
+                <img src="../images/login.jpg" id="main_image">
             </div> 
             <div id="section_form">
                 <h2>Sign In</h2>
-                <form id="form">
+                <h3>Hey!<span ng-style="mystyle">{{username}}</span></h3>
+                <form>
                     <div class="box">
                         <label for="email">Email</label>
-                        <input type="text" placeholder="Email" id="email">
+                        <input type="text" placeholder="Email" id="email" ng-model="username">
                     </div>
                     <div class="box">
                         <label for="pass">Password</label>
@@ -57,30 +59,13 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div id="foot-main">
-            <div id="foot_div_1">
-                <h3>Learner</h3>
-            </div>
-            <div id="foot_div_2">
-                <div class="foot_sec">
-                    <p>Explore</p>
-                    <a>Reading Lists</a>
-                    <a>About Us</a>
-                    <a>Contact Us</a>
-                </div>
-                <div class="foot_sec">
-                    <p>Follow</p>
-                    <a href="https://github.com/adityayadv03">GitHub</a>
-                    <a href="https://www.instagram.com/adityayadv01/">Instagram</a>
-                    <a>Twitter</a>
-                </div>
-            </div>
-        </div>
-        <div id="foot-second">
-            <p>&#169; All Rights Reserved 2022-26 <a href="https://github.com/adityayadv03">@adityayadv03</a></p>
-        </div>
-    </footer>
     <script src="script.js"></script>
+    <script>
+        angular.module("myApp",[]).controller("myCtrl",($scope)=>{
+            $scope.mystyle={
+                "color":"green"
+            }
+        });
+    </script>
 </body>
 </html>
