@@ -58,6 +58,7 @@ footer{
 #foot_div_1 h3{
     position: relative;
     top: 38px;
+    font-size: 28px;
 }
 #foot_div_2{
     width: 70%;
@@ -71,11 +72,12 @@ footer{
 }
 .foot_sec p{
     padding: 15px 15px 15px 0px;
+    font-size: 28px;
 }
 .foot_sec a{
     color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 24px;
     padding: 35px 35px 15px 0px;
     font-weight: 300;
     transition: all 0.15s ease-in;
