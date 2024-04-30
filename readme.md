@@ -1,5 +1,7 @@
 # Library Management System
-A Basic Library Management System Website with the help of Web Development
+## A Basic Library Management System Website with the help of Web Development
+
+<h3>You can view the Software Requirement Specification(SRS) Document! at -> <a href="https://drive.google.com/file/d/1Py9VAFtkVKplEBBhxCFCuRG_f6-PMcXW/view?usp=sharing">Click Here</a></h3>
 
 ### Note :- Some Resources like image are taken from Internet , the aim of this project to apply my knowledge gain during learning from different resource , this project is not for commercial purpose . 
 
